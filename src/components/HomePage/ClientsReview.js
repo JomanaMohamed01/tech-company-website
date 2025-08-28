@@ -58,7 +58,11 @@ export const Wrapper = styled.div`
 `
 
 export const TextWrapper = styled.div`
-  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
 
   @media screen and (max-width: 1024px) {
     margin-left: 0px;
