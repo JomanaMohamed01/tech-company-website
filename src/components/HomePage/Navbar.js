@@ -23,8 +23,8 @@ function Navbar() {
           <MenuWrapper>
             <LogInOutWrapper>
               <LogInProfileWrapper>
-                <ProfileIcon onClick={() => history.push('/DemoModePageCompound')} />
-                <LogInText onClick={() => history.push('/DemoModePageCompound')}>Log In</LogInText>
+                <ProfileIcon onClick={() => history.push('/')} />
+                <LogInText onClick={() => history.push('/')}>Log In</LogInText>
               </LogInProfileWrapper>
 
               <ExitIcon onClick={() => setShowMenuSection(false)} />
@@ -32,9 +32,9 @@ function Navbar() {
 
             <MenuItemsWrapper>
               <MenuFirstItem onClick={() => history.push('/')}>Home</MenuFirstItem>
-              <MenuItem onClick={() => history.push('/ProductPageCompound')}>Product</MenuItem>
-              <MenuItem onClick={() => history.push('/PricingPlansPageCompound')}>Pricing Plans</MenuItem>
-              <MenuItem onClick={() => history.push('/ContactPageCompound')}>Contact</MenuItem>
+              <MenuItem onClick={() => history.push('/')}>Product</MenuItem>
+              <MenuItem onClick={() => history.push('/')}>Pricing Plans</MenuItem>
+              <MenuItem onClick={() => history.push('/')}>Contact</MenuItem>
             </MenuItemsWrapper>
           </MenuWrapper>
         ) : (
@@ -49,17 +49,17 @@ function Navbar() {
 
             <ItemsWrapper>
               <FirstItem onClick={() => history.push('/')}>Home</FirstItem>
-              <Item onClick={() => history.push('/ProductPageCompound')}>Product</Item>
-              <Item onClick={() => history.push('/PricingPlansPageCompound')}>Pricing Plans</Item>
-              <Item onClick={() => history.push('/ContactPageCompound')}>Contact</Item>
+              <Item onClick={() => history.push('/')}>Product</Item>
+              <Item onClick={() => history.push('/')}>Pricing Plans</Item>
+              <Item onClick={() => history.push('/')}>Contact</Item>
 
               <LogInWrapper>
-                <ProfileIcon onClick={() => history.push('/DemoModePageCompound')} />
-                <Item onClick={() => history.push('/DemoModePageCompound')}>Log In</Item>
+                <ProfileIcon onClick={() => history.push('/')} />
+                <Item onClick={() => history.push('/')}>Log In</Item>
               </LogInWrapper>
 
               <ButtonWrapper>
-                <Button onClick={() => history.push('/PricingPlansPageCompound')}>Get Started</Button>
+                <Button onClick={() => history.push('/')}>Get Started</Button>
               </ButtonWrapper>
             </ItemsWrapper>
 
