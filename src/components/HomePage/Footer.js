@@ -19,6 +19,9 @@ function Footer() {
             <Desc>Communicate. Collaborate. Create.</Desc>
           </LogoTextWrapper>
         </LogoWrapper> */}
+        <ImageWrapper>
+          <Image src="./img/productivity.svg" />
+        </ImageWrapper>
         <ItemsWrapper>
           <FirstItems>
             <ItemsHeader>Contact</ItemsHeader>
@@ -72,7 +75,7 @@ export const Wrapper = styled.div`
   background-color: #ffbf23;
   /* padding-left: 100px; */
   padding-top: 40px;
-  /* margin-top: -200px; */
+  margin-top: -200px;
 
   @media screen and (max-width: 1024px) {
     padding-top: 100px;
@@ -92,11 +95,20 @@ export const MainWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
-  /* margin-top: -400px; */
+  margin-top: -200px;
 
   @media screen and (max-width: 1024px) {
     padding-top: 40px;
   }
+`
+
+export const ImageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+export const Image = styled.img`
+  width: 60%;
 `
 
 export const LogoWrapper = styled.div`
