@@ -1,80 +1,78 @@
-import React from 'react';
+import React from "react"
 import styled from "styled-components"
-import { useHistory } from 'react-router-dom'
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
+import { useHistory } from "react-router-dom"
+;<style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
 </style>
 
 function Footer() {
-
   const history = useHistory()
 
   return (
     <Wrapper>
-      <LogoWrapper>
-        <Logo src='./img/logo.svg' />
-        <LogoTextWrapper>
-          <WeDu onClick={() => history.push('/')}>WeDu</WeDu>
-          <Desc>Communicate. Collaborate. Create.</Desc>
-        </LogoTextWrapper>
-      </LogoWrapper>
-
-      <ItemsWrapper>
-        <FirstItems>
-          <ItemsHeader>Contact</ItemsHeader>
-
-          <MiniItemsWrappperOne>
-            <Item>500 Terry Francois Street <br /> San Francisco, CA 94158</Item>
-            <Item>Sales:<br /> info@mysite.com</Item>
-            <Item>General Inquiries:<br /> 123-456-7890</Item>
-            <Item>Costumer Care:<br /> info@mysite.com</Item>
-          </MiniItemsWrappperOne>
-        </FirstItems>
-
-        <SecondItems>
-          <ItemsHeader>Quick Links</ItemsHeader>
-
-          <MiniItemsWrappperTwo>
-            <Link href='#'>Terms & Conditions</Link>
-            <Link href='#'>Privacy Policy</Link>
-          </MiniItemsWrappperTwo>
-        </SecondItems>
-
-        <ThirdItems>
-          <ItemsHeader>Follow</ItemsHeader>
-
-          <MiniItemsWrappperThree>
-            <Item>Sign up to get the latest news on our product.</Item>
-
-            <EmailWrapper>
-              <Label>Email *</Label>
-              <EmailInputWrapper>
-                <Input type='text' />
-                <InputButton>Subscribe</InputButton>
-              </EmailInputWrapper>
-            </EmailWrapper>
-          </MiniItemsWrappperThree>
-        </ThirdItems>
-
-        <FourthItems>
-          <MiniItemsWrappperFour>
-            <SocialMediaLink href='https://www.linkedin.com/company/wix-com'>LinkedIn</SocialMediaLink>
-            <SocialMediaLink href='https://www.youtube.com/user/WIX'>Youtube</SocialMediaLink>
-            <SocialMediaLink href='https://www.facebook.com/wix/'>Facebook</SocialMediaLink>
-          </MiniItemsWrappperFour>
-        </FourthItems>
-      </ItemsWrapper>
+      <MainWrapper>
+        {/* <LogoWrapper>
+          <Logo src="./img/logo.svg" />
+          <LogoTextWrapper>
+            <WeDu onClick={() => history.push("/")}>WeDu</WeDu>
+            <Desc>Communicate. Collaborate. Create.</Desc>
+          </LogoTextWrapper>
+        </LogoWrapper> */}
+        <ItemsWrapper>
+          <FirstItems>
+            <ItemsHeader>Contact</ItemsHeader>
+            <MiniItemsWrappperOne>
+              <Item>
+                500 Terry Francois Street <br /> San Francisco, CA 94158
+              </Item>
+              <Item>
+                Sales:
+                <br /> info@mysite.com
+              </Item>
+              <Item>
+                General Inquiries:
+                <br /> 123-456-7890
+              </Item>
+              <Item>
+                Costumer Care:
+                <br /> info@mysite.com
+              </Item>
+            </MiniItemsWrappperOne>
+          </FirstItems>
+          <SecondItems>
+            <ItemsHeader>Quick Links</ItemsHeader>
+            <MiniItemsWrappperTwo>
+              <Link href="#">Terms & Conditions</Link>
+              <Link href="#">Privacy Policy</Link>
+            </MiniItemsWrappperTwo>
+          </SecondItems>
+          <ThirdItems>
+            <ItemsHeader>Follow</ItemsHeader>
+            <MiniItemsWrappperThree>
+              <Item>Sign up to get the latest news on our product.</Item>
+              <EmailWrapper>
+                <Label>Email *</Label>
+                <EmailInputWrapper>
+                  <Input type="text" />
+                  <InputButton>Subscribe</InputButton>
+                </EmailInputWrapper>
+              </EmailWrapper>
+            </MiniItemsWrappperThree>
+          </ThirdItems>
+        </ItemsWrapper>
+      </MainWrapper>
     </Wrapper>
-  );
+  )
 }
 
 export const Wrapper = styled.div`
-  height: auto;
-  width: 92.5%;
-  background-color: #FFBF23;
-  padding-left: 100px;
+  /* height: auto; */
+  width: 100%;
+  background-color: #ffbf23;
+  /* padding-left: 100px; */
   padding-top: 40px;
-  margin-top: -200px;
+  /* margin-top: -200px; */
 
   @media screen and (max-width: 1024px) {
     padding-top: 100px;
@@ -86,10 +84,25 @@ export const Wrapper = styled.div`
     width: 100%;
   }
 `
+export const MainWrapper = styled.div`
+  height: auto;
+  width: 100%;
+  background-color: #ffbf23;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  /* margin-top: -400px; */
+
+  @media screen and (max-width: 1024px) {
+    padding-top: 40px;
+  }
+`
 
 export const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
+  width: 100%;
 `
 
 export const LogoTextWrapper = styled.div`
@@ -108,7 +121,7 @@ export const Logo = styled.img`
 
 export const WeDu = styled.p`
   color: #000000;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 22px;
   margin-bottom: -13px;
   cursor: pointer;
@@ -130,34 +143,28 @@ export const Desc = styled.p`
 export const ItemsWrapper = styled.div`
   display: flex;
   justify-content: space-around;
+  width: 100%;
 
   @media screen and (max-width: 1024px) {
-    display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 `
 
-export const FirstItems = styled.div`
-  
-`
+export const FirstItems = styled.div``
 
-export const SecondItems = styled.div`
-  
-`
+export const SecondItems = styled.div``
 
-export const ThirdItems = styled.div`
-  
-`
+export const ThirdItems = styled.div``
 
-export const FourthItems = styled.div`
-  
-`
+export const FourthItems = styled.div``
 
 export const ItemsHeader = styled.p`
   color: #000000;
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 
   @media screen and (max-width: 440px) {
     font-size: 18px;
@@ -165,11 +172,12 @@ export const ItemsHeader = styled.p`
 `
 
 export const MiniItemsWrappperOne = styled.div`
-  width: 400px;
+  /* width: 400px; */
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-left: -20px;
+  /* justify-content: space-around; */
+  /* flex-wrap: wrap; */
+  /* margin-left: -20px; */
+  flex-direction: column;
 
   @media screen and (max-width: 1024px) {
     display: flex;
@@ -206,9 +214,9 @@ export const MiniItemsWrappperFour = styled.div`
 export const Item = styled.p`
   color: #000000;
   font-size: 16px;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   line-height: 25px;
-  
+
   @media screen and (max-width: 440px) {
     font-size: 14px;
   }
@@ -217,7 +225,7 @@ export const Item = styled.p`
 export const Link = styled.a`
   color: #000000;
   font-size: 16px;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   margin-bottom: 20px;
 
   @media screen and (max-width: 440px) {
@@ -225,14 +233,12 @@ export const Link = styled.a`
   }
 `
 
-export const EmailWrapper = styled.div`
-  
-`
+export const EmailWrapper = styled.div``
 
 export const Label = styled.p`
   color: #000000;
   font-size: 16px;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 `
 
 export const EmailInputWrapper = styled.div`
@@ -242,10 +248,10 @@ export const EmailInputWrapper = styled.div`
 `
 
 export const Input = styled.input`
-  background-color: #FFBF23;
+  background-color: #ffbf23;
   color: #000000;
   font-size: 16px;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   width: 178px;
   height: 38px;
   border: 2px solid #000000;
@@ -253,12 +259,12 @@ export const Input = styled.input`
   padding-left: 15px;
 
   :hover {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     outline: none;
   }
 
   :focus {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     outline: none;
   }
 
@@ -269,7 +275,7 @@ export const Input = styled.input`
 
 export const InputButton = styled.p`
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 102px;
   text-align: center;
   padding-top: 9px;
@@ -280,7 +286,7 @@ export const InputButton = styled.p`
   transition: 0.3s ease-in-out;
 
   :hover {
-    background-color: #996E00;
+    background-color: #996e00;
     color: #000000;
   }
 `
@@ -289,7 +295,7 @@ export const SocialMediaLink = styled.a`
   color: #000000;
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   text-decoration: none;
   margin-bottom: 20px;
 
@@ -298,4 +304,20 @@ export const SocialMediaLink = styled.a`
   }
 `
 
-export default Footer;
+export const TopFooterRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+  gap: 40px;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+`
+
+export default Footer
