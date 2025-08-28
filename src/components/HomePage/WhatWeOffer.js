@@ -63,6 +63,7 @@ function WhatWeOffer() {
 
 export const Wrapper = styled.div`
   margin-top: 150px;
+  width: 100%;
 
   @media screen and (max-width: 500px) {
     margin-top: 100px;
@@ -70,7 +71,11 @@ export const Wrapper = styled.div`
 `
 
 export const TextWrapper = styled.div`
-  margin-left: 100px;
+  /* margin-left: 100px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   @media screen and (max-width: 1050px) {
     margin-left: 0px;
@@ -97,6 +102,7 @@ export const Text = styled.p`
   font-size: 16px;
   width: 492px;
   line-height: 25px;
+  text-align: center;
 
   @media screen and (max-width: 1050px) {
     text-align: center;
