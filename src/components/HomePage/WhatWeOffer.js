@@ -103,6 +103,7 @@ export const Text = styled.p`
   width: 492px;
   line-height: 25px;
   text-align: center;
+  margin-top: -20px;
 
   @media screen and (max-width: 1050px) {
     text-align: center;
