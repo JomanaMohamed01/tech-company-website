@@ -13,7 +13,7 @@ function MaximizeYourProductivity() {
     <Wrapper>
       <TextWrapper>
         <Header>Get Ready to Maximize Your Productivity With Our Workflow Solutions</Header>
-        <Button onClick={() => history.push('/PricingPlansPageCompound')}>Get Started</Button>
+        <Button onClick={() => history.push('/')}>Get Started</Button>
       </TextWrapper>
 
       <ImageWrapper>
