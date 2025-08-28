@@ -24,7 +24,7 @@ function MaximizeYourProductivity() {
 }
 
 export const Wrapper = styled.div`
-  margin-top: 370px;
+  margin-top: 270px;
 `
 
 export const TextWrapper = styled.div`
@@ -76,11 +76,11 @@ export const Button = styled.p`
 export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: -100px;
+  /* margin-top: -100px; */
 
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     margin-top: -40px;
-  }
+  } */
 `
 
 export const Image = styled.img`
