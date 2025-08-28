@@ -44,8 +44,11 @@ export const Wrapper = styled.div`
 `
 
 export const TextWrapper = styled.div`
-  margin-left: 150px;
   margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   @media screen and (max-width: 1024px) {
     margin-left: 0px;
@@ -73,6 +76,7 @@ export const Text = styled.p`
   font-family: 'Space Grotesk', sans-serif;
   line-height: 30px;
   width: 448px;
+  text-align: center;
 
   @media screen and (max-width: 1024px) {
     text-align: center;
