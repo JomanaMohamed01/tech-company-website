@@ -14,7 +14,7 @@ function Communicate() {
       <TextWrapper>
         <Header>Communicate. Collaborate. Create.</Header>
         <Text>WeDu provides an effective and powerful way to manage your projects</Text>
-        <Button onClick={() => history.push('/PricingPlansPageCompound')}>Get Started</Button>
+        <Button onClick={() => history.push('/')}>Get Started</Button>
 
         <IconsWrapper>
           <IconTextWrapper>
