@@ -20,7 +20,7 @@ function PricingOptions() {
           Just click “Edit Text” or double click me to add your own content and make changes to the font.
           I’m a great place for you to tell a story and let your users know a little more about you.
         </Text>
-        <Button onClick={() => history.push('/PricingPlansPageCompound')}>See More</Button>
+        <Button onClick={() => history.push('/')}>See More</Button>
       </TextWrapper>
 
       <PricingWrapper>
@@ -32,7 +32,7 @@ function PricingOptions() {
           <Timing>Every month</Timing>
           <Membership>Use this area to describe one of your memberships.</Membership>
           <ValidFor>Valid for 12 months</ValidFor>
-          <GetStartedButton onClick={() => history.push('/PricingPlansPageCompound')}>Get Started</GetStartedButton>
+          <GetStartedButton onClick={() => history.push('/')}>Get Started</GetStartedButton>
         </PricingTextWrapper>
 
 
